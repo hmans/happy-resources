@@ -7,7 +7,7 @@ module Happy
 
         on :id do
           on_get         { show }
-          on_post        { update }
+          on_put         { update }
           on_delete      { destroy }
           on_get('edit') { edit }
         end
